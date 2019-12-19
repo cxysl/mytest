@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" language="JavaScript">
+//			var box = new RegExp('box','ig');
+//			var box = /box/ig;
+//			var str = 'This is a Box!';
+//			alert(box.test(str));
+//			alert(/box/i.test('This is a Box!'))
+
+//			var a = /(g)oole/;
+//			var str = 'This is google!';
+//			a.test(str);
+//			alert(RegExp.input);
+//			alert(RegExp.leftContext);
+//			alert(RegExp.rightContext);
+
+
+//			var  pattern = /(g)oogle/;
+//			var  str = 'This is google！';
+//			pattern.test(str);			//执行一下
+//			alert(RegExp.input);			//This is google！
+//			alert(RegExp.leftContext);		//This is 
+//			alert(RegExp.rightContext);		//！
+//			alert(RegExp.lastMatch);		//google
+//			alert(RegExp.lastParen);		//g
+//			alert(RegExp.multiline);		  //false
+			
+			var  pattern = /(g)oogle/ig;
+			var  str = 'This  is google google!';
+			pattern.test(str);
+			alert(pattern.global);	//true，是否全局了
+			alert(pattern.ignoreCase);	//true，是否忽略大小写
+			alert(pattern.multiline);		//false，是否支持换行
+			alert(pattern.lastIndex);		//0，下次的匹配位置
+			alert(pattern.source);	//google，正则表达式的源字符串
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" language="JavaScript">
+			var today = new Date();
+			var today2 = new Date(2025,10,11)
+			document.write('那天星期'+today2.getDay()+"<br/>")
+			document.write('那天距今天有'+today2.getTime()+"毫秒"+"<br/>");
+			var sss1 = Date.UTC(today.getFullYear(),today.getMonth()+1,today.getDate(),today.getHours(),
+			today.getMinutes(),today.getSeconds(),today.getMilliseconds());
+			
+			var sss2 = Date.UTC(today2.getFullYear(),today2.getMonth()+1,today2.getDate(),today2.getHours(),
+			today2.getMinutes(),today2.getSeconds(),today2.getMilliseconds());
+			var ddd3 = sss2-sss1;
+			document.write('那天距今天有'+ddd3+"毫秒"+"<br/>");
+			var sss3 = Math.round((sss2-sss1)/(24*60*60*1000));
+			document.write('那天距今天有'+sss3+"天");
+			
+		</script>
+	</body>
+</html>
+
+<!--
+var day001 = new Date(2019,10,18);
+			day001.setDay(5);
+			var day = new Date(2019,10,19);
+			function day01(){
+				var xinqi = day.getDay();
+				return xinqi;
+			}
+			var a = day01();
+			document.write('那天星期'+a);
+			function day02(){
+				var xinqi = day.getDay();
+				return xinqi;
+			}-->

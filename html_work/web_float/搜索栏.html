@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@import url("css/font-awesome.min.css");
+			body,*{
+				margin: 0px;
+				padding: 0px;
+				font:normal normal 12px  "微软雅黑";
+				color: #666666;
+			}
+			ul,ol{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			* a:hover{
+				color: #FF6600;
+				text-decoration: underline;
+			}
+			#up_two{
+				margin-top: 40px;
+				height: 70px;
+				margin-bottom: 25px;
+			}
+			.span01{
+				float: left;
+				margin-left: 160px;
+			}
+			.found{
+				float: left;
+				margin-left: 120px;
+				background-color:#DE0304 ;
+				width: 480px;
+				height: 45px;
+			}
+			#text01{
+				border: 1px solid #DE0304;
+				width: 360px;
+				height: 38px;
+				margin-left: 2px;
+				padding-top: 1px;
+			}
+			#sub01{
+				border: 0px solid #DE0304 ;
+				color: #FFFFFF;
+				background-color: #DE0304;
+				text-align: center;
+				width: 80px;
+				height: 40px;
+				padding-top: 2px;
+				padding-left: 20px;
+				font: normal bolder 18px "微软雅黑";
+			}
+			.found div{
+				margin-top: 4px;
+			}
+			.found div a{
+				padding-right: 5px;
+			}
+			.two_03{
+				float: left;
+				width: 100px;
+				height: 45px;
+			}
+			.two_03_01{
+				float: left;
+				height: 45px;
+				width: 30px;
+				line-height: 20px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 5px;
+			}
+			.two_03_02{
+				float: left;
+				margin-top: 2px;
+				font: normal lighter 28px  "微软雅黑";
+				color: #CCCCCC;				
+			}
+			.two_04{
+				float: left;
+				/*border: 1px solid #DE0304;*/
+				width: 140px;
+				height: 45px;
+			}
+			.two_04_01{
+				/*height: 45px;
+				width: 40px;*/
+				float: left;
+			}
+			.two_04_01 i{
+				color: #DE0304;
+				font-size: 40px;
+				margin-right: 8px;
+			}
+			.two_04_02 a{
+				color: #593B07;
+			}
+			.two_04_02 {				
+				padding-top: 2px;				
+			}
+			.two_04_02_font{
+				font:normal bolder 16px  "微软雅黑";
+				color: red;			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="up_two">
+			<!--2.1-->
+			<span class="span01">
+				<a href="#">
+					<img src="img/logo.jpg"/>
+				</a>
+			</span>	
+			<!--2.2-->
+			<div class="found">    					
+                <input type="text" id="text01" placeholder="书名、作者、出版社、ISBN、文具"/>
+                <input type="submit" id="sub01" name="keyBtn" value="搜  索" />
+				<div >
+                	热门搜索：
+                    <a href="#" >毛泽东思想和中国特色</a>
+                    <a href="#">高等数学（第七版)</a>
+                    <a href="#">计算机网络</a>
+                    <a href="#">管理学</a>
+				</div>
+			</div>	
+			<!--2.3-->
+			<div class="two_03">
+				<div class="two_03_01"><a href="#">同店找书</a></div>
+				<div class="two_03_02">|</div>
+				<div class="two_03_01"><a href="#">高级搜索</a></div>				
+			</div>
+			<!--2.4-->
+			<div class="two_04">
+				<div class="two_04_01">
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+				
+				<div>
+					<div class="two_04_02"><a href="#">网站购物车
+						<span class="two_04_02_font">0</span>本</a>
+					</div>				
+					<div class="two_04_02"><a href="#">店铺购物车
+						<span class="two_04_02_font">0</span>本</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

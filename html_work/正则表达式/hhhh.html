@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<strong id="aa">0</strong>
+	</body>
+</html>
+<script>
+	var x =aa.innerHTML;
+	x = Number(x);
+	function t(){
+		x++;
+		aa.innerHTML =x ;
+	}
+	var  timout = null;	
+	function start(){
+		timout = setInterval(t,1000);
+	}
+	start();
+//	function end(){
+//		clearInterval(timout);
+//	}
+</script>

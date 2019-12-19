@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>星座属相</title>
+		<style type="text/css">
+			table{
+				width: 400px;
+				height: 300px;
+				background-color: gold;
+				font: normal bolder 14px  "微软雅黑";
+				border: 2px dashed black;
+			}
+			button{
+				font: normal bolder 14px  "微软雅黑";
+			}
+		</style>
+		<script type="text/javascript" language="JavaScript">
+		
+			function clk(){
+				var year = document.getElementById("year");	
+				var year1 = Number(year.value);
+				year1 = year1 % 12;
+				
+				var month = document.getElementById("month");
+				var month1 = Number(month.value);
+			
+				var day = document.getElementById("day");
+				var day1 = Number(day.value);
+
+				function a(month1,day1){					 
+			    	var xingzuo = ["魔羯座","水瓶座", "双鱼座", "牡羊座", 
+			    		"金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座" ];   
+			    	var month22 = [22, 20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22];  // 两个星座分割日
+			        var index = month1;
+			        // 所查询日期在分割日之前，索引-1，否则不变
+			        if (day1 < month22[month1 - 1]) {
+			                index = index - 1;
+			        }
+			        // 返回索引指向的星座string
+			        return xingzuo[index];
+				}
+				
+//				document.write(a(month1,day1))
+				xingzuo.value = a(month1,day1);
+				switch(year1){
+					case 1:
+					shengxiao.value = '鸡';break;
+					case 2:
+					shengxiao.value = '狗';break;
+					case 3:
+					shengxiao.value = '猪';break;
+					case 4:
+					shengxiao.value = '鼠';break;
+					case 5:
+					shengxiao.value = '牛';break;
+					case 6:
+					shengxiao.value = '虎';break;
+					case 7:
+					shengxiao.value = '兔';break;
+					case 8:
+					shengxiao.value = '龙';break;
+					case 9:
+					shengxiao.value = '蛇';break;
+					case 10:
+					shengxiao.value = '马';break;
+					case 11:
+					shengxiao.value = '羊';break;
+					case 0:
+					shengxiao.value = '候';break;
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>出生年份：
+				<input type="text" name="year" id="year" />
+				</td>				
+			</tr>
+			<tr>
+				<td>出生月份：
+				<input type="text" id="month"  name="month"/>
+				</td>				
+			</tr>
+			<tr>
+				<td>出生日：
+				<input type="text" id="day" name="day"/>
+				</td>	
+				<td>
+					<button type="button" onclick="clk()">计算一下</button>
+				</td>
+			</tr>
+			<tr>
+				<td>星座：
+				<input type="text" id="xingzuo" name="xingzuo"/>
+				</td>				
+			</tr>
+			<tr>
+				<td>属相：
+				<input type="text" id="shengxiao" name="shengxiao" />
+				</td>				
+			</tr>
+		</table>
+	</body>
+</html>

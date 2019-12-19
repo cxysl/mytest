@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 500px;
+				border: dashed 1px darkgray;
+			}
+			#head{
+				width: 500px;
+				height: 30px;
+				background-color: darkgray;
+			}
+			.xx1{
+				border-left: 0px solid black;
+				border-right: 0px solid black;
+				border-bottom: 0px solid black;
+				width: 460px;
+				margin-left: 10px;
+			}
+			.font1{
+				color: red;
+			}
+			.font2{
+				/*padding-left: 50px;*/
+			}
+			#sub,#reset{
+				width: 60px;
+				height: 30px;
+				border: none;
+				color: #FFFFFF;
+				font:normal bolder 16px  "微软雅黑";
+				background-color: gray;
+			}
+			#sub{
+				margin-left:20px;
+			}
+			#reset{
+				margin-left:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="head">反馈表单</div>
+			<fieldset class="xx1">
+				<legend >用户信息</legend>
+			</fieldset>
+			<form action="" method="get">
+				<table id="table">
+					<tr>
+						<td class="font2">用户名：</td>
+						<td><input type="text" name="name1" id="name1" /> 
+						</td>
+					</tr>
+					<tr>
+						<td>电子邮件：</td>
+						<td><input type="email" name="email" id="email" value="@" />
+						</td>
+					</tr>
+					<tr>
+						<td>网址：</td>
+						<td><input type="url" name="www" id="www" value="http://" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<fieldset class="xx1">
+								<legend >用户信息</legend>
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td>相关图片：</td>
+						<td>
+							<input type="file" value="选择文件" id="file"/>
+						</td>
+						
+					</tr>
+					<tr>
+						<td> </td>
+						<td class="font1">
+							本系统只支持上传。jpg、gif、png图片。
+						</td>
+					</tr>
+					<tr>
+						<td>内容：</td>
+						<td>
+							<textarea></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="font1">
+							请输入留言内容！
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" value="提交" name="sub" id="sub" />
+						</td>
+						<td>
+							<input type="reset" value="重置" name="reset" id="reset" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body> 
+</html>
+	<!--<fieldset class="xx1">
+			<legend>部分不哟的</legend>
+		</fieldset>-->

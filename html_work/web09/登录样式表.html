@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录表单</title>
+		<style type="text/css">
+			*{
+				font: normal normal 14px"微软雅黑";
+			}
+			#main{
+				background-color: #C9C9C9;
+				width: 400px;
+				height: 300px;
+				position: absolute;
+			}
+			.xx1{
+				position: relative;
+				top: 40px;
+				left: 30px;
+				width: 280px;
+				background-color: #C9D9E8;
+				border: none;
+				border-radius: 10px;
+			}
+			.xx1 legend span {
+				padding: 0 5px 5px 5px;
+				/*text-shadow: 2px 6px 5px #00ffff;*/				       		               	
+				background-color: #C9C9C9;
+				border-radius: 10px;
+			}
+			strong{
+				padding:20px 10px;
+				font: normal bolder 24px  "微软雅黑";
+				background-image: -webkit-linear-gradient(bottom, rgb(4,103,156),rgb(240, 240, 240));
+            	-webkit-background-clip: text;
+            	-webkit-text-fill-color: transparent; 
+			}
+			button{
+				margin-left: 150px;
+				width: 60px;
+				height: 20px;
+				border: none;
+				background-color: #93CF8F;
+			}
+			p{
+				font-weight: bold;
+				margin: 0;;
+				padding-left: 50px;
+			}
+			#email,#psw{
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<fieldset class="xx1">
+			<legend><span><strong>登录</strong></span></legend>
+			<form action="" method="get" id="form1">
+				<table>
+					<tr>
+						<td>email</td>
+						<td>
+							<input type="email" id="email" />
+						</td>
+					</tr>
+					<tr>
+						<td>密码</td>
+						<td>
+							<input type="password" id="psw" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">记住状态？<input type="radio" />
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<button type="submit">登录</button>
+						</td>
+					</tr>
+					<tr >
+						<td colspan="2" >
+							<p>@www.xxxxxx.cn</p>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

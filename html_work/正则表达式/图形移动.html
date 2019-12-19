@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#wrap{
+				width: 200px;
+				height: 150px;
+				border-radius: 50%;
+				background-color: red;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" ></div>
+	</body>
+</html>
+
+<script>
+		//鼠标拖拽移动
+		//1.为div绑定鼠标事件
+		//2.将鼠标坐标点与div定位位置进行关联
+		wrap.onmousedown = function(e){
+			var e = e || window.event;
+			//获取按下的位置
+			var h = e.clientY;
+			var w = e.clientX;
+			console.log(h,w);
+			//获得是鼠标按下时相对于元素的位置
+			var ex = w - wrap.offsetLeft;
+			var ey = h - wrap.offsetTop;
+			document.onmousemove = function(h){
+				var h = h||window.event;
+				var  h1 = h.clientY;
+				var  w1 = h.clientX;
+				console.log(h1,w1);
+				wrap.style.left=(w1-ex)+"px"; 
+				wrap.style.top=(h1-ey)+"px";
+			
+			}
+		}
+ 
+		wrap.onmouseup =function(){
+			document.onmousemove = null;
+		}
+ 
+	</script>

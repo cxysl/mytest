@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,*{
+				margin: 0px;
+				padding: 0px;
+				font:normal normal 16px  "微软雅黑";
+				color: #666666;
+			}
+			ul,ol{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			* a:hover{
+				color: #FF6600;
+				text-decoration: underline;
+			}
+			#end{
+				width: 218px;
+				margin: 0px auto;
+			}
+			#end ul li{
+				list-style: none;  /*去除列表前的标点*/
+				line-height: 43px;   /*列表高度*/
+				border-bottom: 1px dashed #CACACA;  /*列表底部边框宽度、样式、颜色*/
+				overflow: hidden;      /*溢出隐藏*/
+    			white-space: nowrap;	/*规定文本不进行换行*/
+    			text-overflow: ellipsis;	/*当对象内文本溢出时显示省略标记（...）*/
+			}
+			#end ul{    
+				width: 218px;   
+				border: 1px solid #CACACA;   /*无序列表的大边框宽度、样式、颜色*/
+				margin: 0;  /* 外填充*/
+				padding: 0;   /* 内容填充*/
+				font-family: "微软雅黑";
+				font-size: 16px;
+			}
+			.p12{
+				padding: 14px;  /*内容填充*/
+				float: left;
+			}
+			.p13{
+				padding: 7px;  /*内容填充*/
+				float: left;
+			}
+			#p15{
+				color: red;
+				}
+			#end ul li div a p:hover{
+				color: #FF6600;
+			}
+			.font01{
+				color: #464646;
+				width: 90px;
+				padding-top: 5px;
+			}
+			.font03{
+				display: block;
+				font: normal bolder 16px  "微软雅黑";
+				color: #DA0000;
+				padding-top: 5px;
+			}
+			.font04{
+				display: block;
+				color:#9D9D9D ;
+				text-decoration:line-through;/* 删除线效果*/
+				padding-top: 5px;
+			}
+			
+			.tu01{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu01 img{
+				width: 54px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu01{
+				display: block;			
+			}
+			#end ul li:hover .end_a1{
+				display: none;			
+			}
+			.end_b1{
+				display: none;
+			}
+			#end ul li:hover .end_b1{
+				display: block;			
+			}
+			.tu02{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu02 img{
+				width: 54px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu02{
+				display: block;			
+			}
+			#end ul li:hover .end_a2{
+				display: none;			
+			}
+			.end_b2{
+				display: none;
+			}
+			#end ul li:hover .end_b2{
+				display: block;			
+			}
+			.tu03{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu03 img{
+				width: 54px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu03{
+				display: block;			
+			}
+			#end ul li:hover .end_a3{
+				display: none;			
+			}
+			.end_b3{
+				display: none;
+			}
+			#end ul li:hover .end_b3{
+				display: block;			
+			}
+			.tu04{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu04 img{
+				width: 80px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu04{
+				display: block;			
+			}
+			#end ul li:hover .end_a4{
+				display: none;			
+			}
+			.end_b4{
+				display: none;
+			}
+			#end ul li:hover .end_b4{
+				display: block;			
+			}
+			.tu05{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu05 img{
+				width: 80px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu05{
+				display: block;			
+			}
+			#end ul li:hover .end_a5{
+				display: none;			
+			}
+			.end_b5{
+				display: none;
+			}
+			#end ul li:hover .end_b5{
+				display: block;			
+			}
+			.tu06{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu06 img{
+				width: 80px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu06{
+				display: block;			
+			}
+			#end ul li:hover .end_a6{
+				display: none;			
+			}
+			.end_b6{
+				display: none;
+			}
+			#end ul li:hover .end_b6{
+				display: block;			
+			}
+			.tu07{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu07 img{
+				width: 54px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu07{
+				display: block;			
+			}
+			#end ul li:hover .end_a7{
+				display: none;			
+			}
+			.end_b7{
+				display: none;
+			}
+			#end ul li:hover .end_b7{
+				display: block;			
+			}
+			.tu08{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu08 img{
+				width: 80px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu08{
+				display: block;			
+			}
+			#end ul li:hover .end_a8{
+				display: none;			
+			}
+			.end_b8{
+				display: none;
+			}
+			#end ul li:hover .end_b8{
+				display: block;			
+			}
+			.tu09{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu09 img{
+				width: 80px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu09{
+				display: block;			
+			}
+			#end ul li:hover .end_a9{
+				display: none;			
+			}
+			.end_b9{
+				display: none;
+			}
+			#end ul li:hover .end_b9{
+				display: block;			
+			}
+			.tu10{	
+				width: auto;			
+				height: 93px;				
+				float: left;
+				display: none;
+			}
+			.tu10 img{
+				width: 54px;
+				height: 80px;
+				background-size: 54px 80px;
+				margin-right: 10px;
+			}
+			#end ul li:hover .tu10{
+				display: block;			
+			}
+			#end ul li:hover .end_a10{
+				display: none;			
+			}
+			.end_b10{
+				display: none;
+			}
+			#end ul li:hover .end_b10{
+				display: block;			
+			}
+			#end ul li div a p{
+				overflow: hidden;      /*溢出隐藏*/
+				white-space: nowrap;	/*规定文本不进行换行*/
+    			text-overflow: ellipsis;	/*当对象内文本溢出时显示省略标记（...）*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="end">
+			<ul>
+				<li autofocus="autofocus>
+					<span><strong id="p15" class="p15 p12" >1</strong></span>
+					<div class="tu01">
+						<img src="img/tu1.jpg" />
+					</div>
+					<a href="#" class="end_a1"> 白说 央视著名主持白岩松著</a>
+					<div class="end_b1">
+						<a href="#"><p class="font01">白说 央视著名主持白岩松著</p></a>
+						<p class="font03">¥15.90</p>
+						<p class="font04">¥39.80</p>
+					</div>
+				</li>
+				<li>
+					<span><strong id="p15" class="p15 p12">2</strong></span>
+					<div class="tu02">
+						<img src="img/tu2.jpg" />
+					</div>
+					<a href="#" class="end_a2"> 解忧杂货店</a>
+					<div class="end_b2">
+						<a href="#"><p class="font01">解忧杂货店</p></a>
+						<p class="font03">¥15.90</p>
+						<p class="font04">¥39.50</p>
+					</div>
+				</li>
+				<li>
+					<span><strong id="p15" class="p15 p12">3</strong></span>
+					<div class="tu03">
+						<img src="img/tu3.jpg" />
+					</div>
+					<a href="#" class="end_a3"> 将来的你,一定会感谢现在拼命的</a>
+					<div class="end_b3">
+						<a href="#"><p class="font01">将来的你,一定会感谢现在拼命的</p></a>
+						<p class="font03">¥12.80</p>
+						<p class="font04">¥32.00</p>
+					</div>
+				</li>
+				<li>
+					<span><strong class=" p12">4</strong></span>
+					<div class="tu04">
+						<img src="img/tu4.jpg" />
+					</div>
+					<a class="end_a4"> 偷影子的人</a>
+					<div class="end_b4">
+						<a href="#"><p class="font01">偷影子的人</p></a>
+						<p class="font03">¥11.90</p>
+						<p class="font04">¥29.80</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class=" p12">5</strong></span>
+					<div class="tu05">
+						<img src="img/tu5.jpg" />
+					</div>
+					<a href="#" class="end_a5"> 萤火虫小巷</a>
+					<div class="end_b5">
+						<a href="#"><p class="font01">萤火虫小巷</p></a>
+						<p class="font03">¥14.40</p>
+						<p class="font04">¥36.00</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class="p12">6</strong></span>
+					<div class="tu06">
+						<img src="img/tu6.jpg" />
+					</div>
+					<a href="#" class="end_a6"> 如果蜗牛有爱情</a>
+					<div class="end_b6">
+						<a href="#"><p class="font01">如果蜗牛有爱情</p></a>
+						<p class="font03">¥25.00</p>
+						<p class="font04">¥49.80</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class="p12">7</strong></span>
+					<div class="tu07">
+						<img src="img/tu7.jpg" />
+					</div>
+					<a href="#" class="end_a7"> 查令十字街84号(珍藏版)</a>
+					<div class="end_b7">
+						<a href="#"><p class="font01">查令十字街84号(珍藏版)</p></a>
+						<p class="font03">¥14.00</p>
+						<p class="font04">¥35.00</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class="p12">8</strong></span>
+					<div class="tu08">
+						<img src="img/tu8.jpg" />
+					</div>
+					<a href="#" class="end_a8"> 语言学纲要(修订版)（内容一致，印次、封面或原价不同，统一售价，随机发货）</a>
+					<div class="end_b8">
+						<a href="#"><p class="font01">语言学纲要(修订版)（内容一致，印次、封面或原价不同，统一售价，随机发货）</p></a>
+						<p class="font03">¥5.00</p>
+						<p class="font04">¥26.00</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class="p12">9</strong></span>
+					<div class="tu09">
+						<img src="img/tu9.jpg" />
+					</div>
+					<a href="#" class="end_a9"> 管理信息系统(第五版)</a>
+					<div class="end_b9">
+						<a href="#"><p class="font01">管理信息系统(第五版)</p></a>
+						<p class="font03">¥6.00</p>
+						<p class="font04">¥39.80</p>
+					</div>
+				</li>
+				<li>
+					<span><strong  class="p12">10</strong></span>
+					<div class="tu10">
+						<img src="img/tu10.jpg" />
+					</div>
+					<a href="#" class="end_a10"> 数字信号处理(第三版)（内容一致，印次、封面或原价不同，统一售价，随机发货）</a>
+					<div class="end_b10">
+						<a href="#"><p class="font01">数字信号处理(第三版)（内容一致，印次、封面或原价不同，统一售价，随机发货）</p></a>
+						<p class="font03">¥5.00</p>
+						<p class="font04">¥32.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.xx1{
+				margin: 20px 10px;
+				width: 600px;
+				border: 1px dashed deepskyblue;
+			}
+			.xx1 legend span{
+				padding:5px 10px;
+				border: 1px dashed deepskyblue;
+			}
+			#sub,#sub2{
+				width: 60px;
+				height: 30px;
+				border: none;
+				color: #FFFFFF;
+				font:normal bolder 16px  "微软雅黑";
+				background-color: gray;
+				margin-left: 160px;
+			}
+			.kongge{
+				padding-left: 50px;
+				padding-right: 35px;
+			}
+			strong{
+				color: red;
+				font: normal normal 14px  "微软雅黑";
+			}
+			option,#xinxi_place{
+				color: deepskyblue;
+			}
+			input,select,textarea{
+				border-color:deepskyblue ;
+			}
+			a{
+				color: deepskyblue;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset class="xx1">
+			<legend><span>用户登入</span></legend>
+			<form action="" method="get" id="form1">
+				<table>
+					<tr>
+						<td class="kongge">用户名： </td>
+						<td><input type="text" form="form1" /></td>
+					</tr>
+					<tr>
+						<td class="kongge">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+						<td><input type="text" form="form1"  /> </td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button type="submit" id="sub">登录</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		
+		<fieldset class="xx1">
+			<legend><span>用户注册</span></legend>
+			<form action="" method="get" id="form2">
+				<table>
+					<tr>
+						<td>用户名：</td>
+						<td><input type="text"  form="form2"min="5" max="30"/>
+						<strong>*（最多30个字符）</strong></td>
+					</tr>
+					<tr>
+						<td>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+						<td><input type="text" form="form2" max="30"/>
+						<strong>*（最多30个字符）</strong></td>
+					</tr>
+					<tr>
+						<td>重复密码：</td>
+						<td><input type="text"  form="form2" max="30"/>
+						<strong>*（密码需要一致）</strong></td>
+					</tr>
+					<tr>
+						<td>密保问题:</td>
+						<td>
+							<select name="place" id="xinxi_place" form="form2">
+							<option>请选择密码提示问题</option>
+							<option>纽约</option>
+							<option>巴黎</option>
+							<option>伦敦</option>
+						</select>	
+						</td>
+					</tr>
+					<tr>
+						<td>密码保护问题答案：</td>
+						<td><input type="text" form="form2" /></td>
+					</tr>
+					<tr>
+						<td>性别：</td>
+						<td>
+							<input type="radio" name="sex" id="sex1" form="form2"/><label for="sex1">男</label>
+							<input type="radio" name="sex" id="sex0"  form="form2"/><label for="sex0">女</label>							
+						</td>
+					</tr>
+					<tr>
+						<td>本站印象：</td>
+						<td>
+							<textarea form="form2"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>同意服务条款：</td>
+						<td>
+							<input type="radio" name="xieyi" id="xieyi" form="form2"/>
+							<label for="xieyi"><a href="#">查看服务条款？</a></label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button type="submit" id="sub2"> 提交</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</body>
+</html>

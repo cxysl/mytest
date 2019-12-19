@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<style type="text/css">
+			body{
+				font:normal normal 14px  "微软雅黑";
+				/*background-color: cornflowerblue;*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post" id="xinxi">
+			<h1>个人信息</h1>
+			<hr color="#FF0000" size="2"/>
+			<h2>修改个人信息（*为必选项）</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td>*姓名</td> <td><input type="text" name="name" id="xinxi_name" placeholder="张三"/> </td>
+					</tr>
+					<tr>
+						<td>*性别</td>
+						<td><input type="radio" name="sex_redio" id="xinxi_sex_name1" checked="checked"/>
+						<label for="xinxi_sex_name1">男</label>
+						<input type="radio" name="sex_redio" id="xinxi_sex_name0"/>
+						<label for="xinxi_sex_name0">女</label></td>
+					</tr>
+					<tr>
+						<td>*出生日期</td>
+						<td><input type="text" name="year" size="4" id="xinxi_year"/>年
+						<input type="text" name="year" size="4" id="xinxi_moth"/>月</td>
+					</tr>
+					<tr>
+						<td>*参加工作年份</td>
+						<td><select name="work_year" id="xinxi_work_year" <!--size="2"-->>
+							<option>无工作经验</option>
+							<option>5年</option>
+							<option>10年</option>
+							<option>天山童姥</option>
+						</select> </td>
+					</tr>
+					<tr>
+						<td>*户口所在地</td>
+						<td><select name="place" id="xinxi_place">
+							<option>上海</option>
+							<option>纽约</option>
+							<option>巴黎</option>
+							<option>伦敦</option>
+						</select> </td>
+					</tr>
+					<tr>
+						<td>*现居住城市</td>
+						<td><select name="now_place" id="xinxi_now_place">
+							<option>火星</option>
+							<option>阿拉斯加</option>
+							<option>M78</option>
+							<option>格陵兰</option>
+						</select> </td>
+					</tr>
+					<tr>
+						<td>*联系方式</td>
+						<td><input type="text" /><a href="#">修改</a></td>
+					</tr>
+					<tr>
+						<td>*电子邮箱</td>
+						<td><input type="email" /><a href="#">修改</a></td>
+					</tr>
+					<tr>
+						<td>*婚姻状况</td>
+						<td><input type="radio" name="hunyin_redio"  checked="checked"/>未婚
+						<input type="radio" name="hunyin_redio" id="xinxi_sex_name0"/>已婚
+						<input type="radio" name="hunyin_redio" id="xinxi_sex_name0"/>离异</td>
+					</tr>
+					<tr>
+						<td>国籍</td>
+						<td><select >
+							<option>中国大陆</option>
+							<option>中国香港</option>
+							<option>中国台湾</option>
+							<option>外国</option>
+						</select> </td>
+					</tr>
+					<tr>
+						<td>海外工作/学习经历</td>
+						<td><input type="radio" name="work_redio"  checked="checked"/>有
+						<input type="radio" name="work_redio" id="xinxi_sex_name0"/>无</td>
+					</tr>
+					<tr>
+						<td>政治面貌</td>
+						<td><input type="radio" name="zhengzhi_redio"  checked="checked"/>党员
+						<input type="radio" name="zhengzhi_redio" />团员
+						<input type="radio" name="zhengzhi_redio" />群众
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" value="保存" />
+						</td>
+						<td><a href="#">返回</a> </td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

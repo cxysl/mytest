@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#bg_img{
+				background-image: url(img/pic1.jpg);
+				width: 320px;
+				height: 320px;
+				position: absolute;
+				/*border: 1px solid red;*/
+			}
+			#bg_img:hover  div{
+				display: block;
+			}
+			#bg_img div{
+				width: 200px;
+				height: 60px;
+				background-color: orange;
+				color: red;
+				line-height: 60px;
+				text-align: center;
+				font: normal bolder 14px  "微软雅黑";
+				padding-top: 23px;
+				box-sizing: border-box;
+				letter-spacing: 3px;
+				display: none;
+			}
+			#up{				
+				position: relative;
+				top:50px;
+				left: 60px;
+			}
+			#center{				
+				position: relative;
+				top: 75px;
+				left: 60px;
+			}
+			#down{				
+				position: relative;
+				top:100px;
+				left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bg_img">
+			<div id="up">
+				九阳豆浆机
+			</div>
+			<div id="center">
+				榨豆浆
+			</div>
+			<div id="down">
+				不含糖
+			</div>
+		</div>
+	</body>
+</html>

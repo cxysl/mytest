@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>9宫格照片</title>
+		<style>
+			body,*{
+				padding:0px ;
+				margin: 0px;
+			}
+			ol,ul{
+				list-style: none;
+			}
+			#china{
+				width: 600px;
+				overflow: hidden;
+			}
+			#china ul li{
+				width: 140px;
+				height: 140px;
+				border: 2px solid red;
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+			.jpg1{
+				background-image: url(img/70国庆10.01.jpg);
+				/*background-size: 300px 300px;*/
+				background-repeat: no-repeat;
+				background-position: -5px -10px;
+			}
+			.jpg2{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -205px -10px;
+			}
+			.jpg3{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -425px -5px;
+			}
+			.jpg4{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -5px -205px;
+			}
+			.jpg5{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -210px -200px;
+			}
+			.jpg6{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -425px -200px;
+			}
+			.jpg7{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -20px -435px;
+			}
+			.jpg8{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -210px -435px;
+			}
+			.jpg9{
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -425px -425px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="china">
+			<ul>
+				<li class="jpg1"></li>
+				<li class="jpg2"></li>
+				<li class="jpg3"></li>
+				<li class="jpg4"></li>
+				<li class="jpg5"></li>
+				<li class="jpg6"></li>
+				<li class="jpg7"></li>
+				<li class="jpg8"></li>
+				<li class="jpg9"></li>
+			</ul>
+		</div>
+	</body>
+</html>

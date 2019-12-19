@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航菜单</title>
+		<style>
+			body,*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+			}
+			ul,ol{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			body>ul{
+				width: 700px;
+			}
+			ul li{
+				float:left;
+				width: 100px;
+				margin-right: 1px;
+				background-color: #0066CC;
+				text-align: center;
+			}
+			ul li ul li{
+				display: none;
+				position: relative;
+			}
+			ul li:hover{
+				background-color: red;
+			}
+			ul li:hover ul li{
+				display: block;
+			}
+			.none{
+				display: none;
+				background-color: deepskyblue;
+			}
+			ul li ul li:hover ul{
+				display: block;
+				position: absolute;
+				margin-left: 100px;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">袁隆平</a>
+				<ul>
+					<li><a href="#">2221</a</li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225>>></a>
+						<ul class="none">
+							<li><a href="#">3331</a></li>
+							<li><a href="#">3332</a></li>
+							<li><a href="#">3333</a></li>
+							<li><a href="#">3334</a></li>
+							<li><a href="#">3335</a></li>
+							<li><a href="#">3336</a></li>
+						</ul>
+					</li>
+					<li><a href="#">2226>>></a>
+						<ul class="none">
+							<li><a href="#">3331</a></li>
+							<li><a href="#">3332</a></li>
+							<li><a href="#">3333</a></li>
+							<li><a href="#">3334</a></li>
+							<li><a href="#">3335</a></li>
+							<li><a href="#">3336</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">习近平</a>
+				<ul>
+					<li><a href="#">2221</a></li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225</a></li>
+					<li><a href="#">2226</a></li>
+				</ul>
+			</li>
+			<li><a href="#">邓小平</a>
+				<ul>
+					<li><a href="#">2221</a></li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225</a></li>
+					<li><a href="#">2226</a></li>
+				</ul>
+			</li>
+			<li><a href="#">周润发</a>
+				<ul>
+					<li><a href="#">2221</a></li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225</a></li>
+					<li><a href="#">2226</a></li>
+				</ul>
+			</li>
+			<li><a href="#">周星驰</a>
+			<ul>
+					<li><a href="#">2221</a></li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225</a></li>
+					<li><a href="#">2226</a></li>
+				</ul>
+			</li>
+			<li><a href="#">胡哥欠</a>
+				<ul>
+					<li><a href="#">2221</a></li>
+					<li><a href="#">2222</a></li>
+					<li><a href="#">2223</a></li>
+					<li><a href="#">2224</a></li>
+					<li><a href="#">2225</a></li>
+					<li><a href="#">2226</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

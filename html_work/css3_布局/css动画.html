@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				width: 100px;
+				height: 100px;
+				background-color: #00BFFF;
+				transition: width 2s ease 0.2s,height 2s ease 0.2s,background-color  linear 1s; 
+			}
+			.div1:hover{
+				width: 500px;
+				height: 500px;
+				background-color:red;
+			}
+			.div2{
+				width: 200px;
+				height: 400px;
+				background-image: url(img/70国庆10.01.jpg);
+				background-size: 200px 400px;
+				position: absolute;
+				overflow: hidden;
+			}
+			.div3{
+				background-color: gray;
+				height: 120px;
+				opacity: 0.8;
+				position: absolute;
+				margin-top: 400px;
+				color: white;
+				transition:margin-top 1s ease 0.2s;
+				
+			}
+			.div2:hover .div3{
+				margin-top: 280px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2">
+			<div class="div3">
+				<h1>程序员</h1>
+				<p>爱上对方过后就哭了了空间和规范的撒</p>
+			</div>
+		</div>
+	</body>
+</html>

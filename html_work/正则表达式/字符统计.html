@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script >
+			var str = ['Apple','plane','canada','china','bus','potato'];
+			var sum= 0;
+			var x = RegExp(/a|A/)
+			for(var i in str){
+				document.write(str[i]+'*  *'+"<br/>");
+				if(str[i].match(x)){
+				document.write(i+'~~~~'+str[i]+"<br/>");
+				sum++;
+				}
+			}
+			document.write("含有a或A的字符串有"+sum+"个<br/>");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<style type="text/css">	
+			body{
+				font: normal normal 14px  "微软雅黑";
+				color: gray;
+				background-color: gainsboro;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}	
+			ul li{
+				list-style: none;
+			}	
+			#all{
+				/*margin: 30px auto;*/
+				width: 400px;
+				height: 650px;	
+				position: absolute;	
+				left: 30px;
+				top: 30px;	
+				border: 1px solid white;
+				background-color: white;	
+			}
+			#head{
+				background-color: #F72838;
+				background: linear-gradient(orchid,#F72838);
+				width: 400px;/*400 172*/
+				height: 172px;
+				position: absolute;
+			}
+			a:hover{
+				color: #00FCE0;
+			}
+			#head:hover{
+				background: linear-gradient(#F72838,orchid);
+			}
+			.setting{   /*设置*/
+				position: absolute;
+				/*border: 1px dashed deepskyblue;*/
+				width: 60px;
+				height: 60px;
+				color: white;
+				font: normal bolder 30px  "微软雅黑";
+				margin-left: 5px;
+			}
+			.envelope{   /*邮箱*/
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				color: white;
+				font: normal bolder 30px  "微软雅黑";
+				left: 360px;
+			}
+			.head_portrait{  /* 头像*/
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background-image: url(img/70国庆10.01.jpg);
+				background-repeat: no-repeat;
+				background-position: -65px -65px;
+				background-size: 200px 200px;
+				position: absolute;
+				left: 170px;
+				top: 20px;
+			}
+			.name{  /*昵称*/
+				position: absolute;
+				font: normal bolder 14px  "微软雅黑";
+				color: white;
+				top: 85px;
+				left: 165px;
+			}
+			.manage{  /*管理浮标*/
+				position: absolute;
+				background-color: gray;
+				opacity: 0.5;
+				border-radius: 10px 0 0 10px;
+				padding-left: 5px;
+				padding-right: 7px;
+				font: normal bolder 12px  "微软雅黑";
+				color: #FAE300;
+				top: 87px;
+				left: 340px;
+			}
+			.up{
+				position: absolute;
+				width: 387px; /*400 172  12.8 5.5*/
+				height: 50px;   /*12.4 1.6*/
+				background-color: white;
+				border-radius: 10px;
+				border: 1px solid white;
+				box-shadow: 5px 5px 5px 6px rgba(205, 205, 205, .6);
+				left: 5.5px;
+				top: 147px;
+			}
+			.people{
+				margin-left: 30px;
+				line-height: 50px;
+				float: left;
+			}
+			strong{
+				color: red;
+			}
+			.money{
+				float: right;
+				line-height: 50px;
+				margin-right: 30px;
+			}
+			#order{
+				position: absolute;
+				top: 200px;
+				width: 400px;
+				/*height: 100px;*/
+				/*border: 1px dashed deepskyblue;*/
+			}
+			.order_up{  /*订单*/
+				width:400px;
+				height: 30px;
+				margin-top: 10px;
+				line-height: 30px;
+			}
+			.order_up_left{  /* 我的订单*/
+				float: left;
+				font: normal bold 14px  "微软雅黑";
+				margin-left:5px ;
+			}
+			.order_up_rigth{  /*查看全部订单*/
+				float: right;
+				font: normal bold 14px  "微软雅黑";
+				margin-right: 5px;
+			}
+			.order_up_center{   /*横线*/
+				clear: both;
+			}
+			.order_down{   /*待付款……*/
+				width: 400px;
+				height: 50px;
+				overflow: hidden;
+			}
+			.order_down ul li{
+				float: left;
+				width: 60px;
+				text-align: center;
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+			.jianxi{   /*中间间隙1*/
+				position: absolute;
+				width: 400px;
+				top: 300px;
+			}
+			.use{  /*应用图标*/
+				position: absolute;
+				top: 310px;
+				/*border: 1px dashed deepskyblue;*/
+				width: 400px;
+				height: 150px;
+			}
+			.use ul{
+				margin-left: 10px;
+			}
+			.use ul li{
+				float: left;
+				margin-left: 5px;
+				text-align: center;
+				width: 70px;
+				height: 70px;
+				color: red;
+				margin-top: 15px;
+				margin-bottom: 5px;
+				font-size: 20px;
+				background-color: #F6F6F6;
+				border-radius: 50%;
+			}
+			.use ul li:hover{
+				background-color: white;
+			}
+			.jianxi2{   /*中间间隙2*/
+				position: absolute;
+				width: 400px;
+				top: 500px;
+			}
+			.manage2{   /*分销管理*/
+				position: absolute;
+				top:510px;
+				width: 400px;
+				height: 25px;
+				font: normal bold 14px  "微软雅黑";
+				margin:5px ;
+			}
+			.jianxi3{   /*中间间隙3*/
+				position: absolute;
+				width: 400px;
+				top: 540px;
+			}
+			.down{   /* 底部应用图标*/
+				position: absolute;
+				width: 400px;
+				top: 550px;
+			}
+			.down ul{
+				margin-left: 10px;
+			}
+			.down ul li{
+				float: left;
+				margin-left: 20px;
+				text-align: center;
+				width: 70px;
+				height: 70px;
+				color: red;
+				margin-top: 15px;
+				margin-bottom: 5px;
+				font-size: 20px;
+				background-color: #F6F6F6;
+				border-radius: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<!--顶部-->
+			<div id="head">
+				<!--设置-->
+				<div class="setting">
+					<a><i class="fa fa-cog"></i></a>
+				</div>
+				<!--邮箱-->
+				<div class="envelope">
+					<a><i class="fa fa-envelope"></i></a>
+				</div>
+				<!--头像-->
+				<div class="head_portrait"></div>
+				<!--昵称-->
+				<div class="name"><a>程序员世林</a></div>
+				<!--管理-->
+				<div class="manage"><a>账户管理</a></div>
+			</div>
+			<!--浮层-->
+			<div class="up">
+				<div class="people">
+					<a>余额<strong>500.00</strong></a>
+				</div>
+				<div class="money">
+					<a>积分<strong>66666</strong></a>
+				</div>
+			</div>
+			<!--我的订单-->
+			<div id="order">
+				<div class="order_up">
+					<div class="order_up_left"><a>我的订单</a></div>
+					<div class="order_up_rigth"><a>查看全部订单></a></div>
+				</div>
+				<div class="order_up_center"><hr size="3" color="#F6F6F6"/></div>
+				<div class="order_down">
+					<ul>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>代付款</p></a>
+						</li>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>待发货</p></a>
+						</li>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>待收货</p></a>
+						</li>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>待评价</p></a>
+						</li>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>买单</p></a>
+						</li>
+						<li>
+							<a><i class="fa fa-briefcase"></i></a>
+							<a><p>退货</p></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--中间间隙1-->
+			<div class="jianxi">
+				<hr color="#F6F6F6" size="8" />
+			</div>
+			<!--应用图标-->
+			<div class="use">
+				<ul>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>红包</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-heart"></i></a>
+						<a><p>消费券</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-music"></i></a>
+						<a><p>优惠券</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star-half-empty"></i></a>
+						<a><p>活动卷</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-flag"></i></a>
+						<a><p>商城</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-flag"></i></a>
+						<a><p>购物车</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star-half-empty"></i></a>
+						<a><p>收藏</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-music"></i></a>
+						<a><p>地址</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-heart"></i></a>
+						<a><p>评价</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>积分</p></a>
+					</li>
+				</ul>
+			</div>
+			<!--中间间隙2-->
+			<div class="jianxi2">
+				<hr color="#F6F6F6" size="8" />
+			</div>
+			<!--分销管理-->
+			<div class="manage2">
+				<a>分销管理</a>
+			</div>
+			<!--中间间隙3-->
+			<div class="jianxi3">
+				<hr color="#F6F6F6" size="3" />
+			</div>
+			<!--底部应用图标-->
+			<div class="down">
+				<ul>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>红包</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>红包</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>红包</p></a>
+					</li>
+					<li>
+						<a><i class="fa fa-star"></i></a>
+						<a><p>红包</p></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

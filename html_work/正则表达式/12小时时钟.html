@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				font: normal bolder 20px  "微软雅黑";
+			}
+			strong{
+				
+				background-color: yellow;
+				width: 50PX;
+			}
+		</style>
+	</head>
+	<body>
+		<p> 你好，欢迎访问东软睿道教育网！</p>
+		<p>2019年10月21日
+			<strong id="h">00</strong>:
+			<strong id="m">00</strong>:
+			<strong id="s">00</strong>
+			<strong id="am">AM</strong>
+			<strong id="week">星期一</strong>
+		</p>
+		<button onclick="start()">开始</button>
+		<button onclick="end()">结束</button>
+		<br />
+	</body>
+</html>
+<script>
+
+	var hh0,mm0,ss0;
+	
+		
+	var  timout = null;	
+//		var ss = document.getElementById('s');
+//		 ss0 = Number(ss.innerHTML);
+//		var mm = document.getElementById('m');
+//		 mm0 = Number(mm.innerHTML);
+//		var hh = document.getElementById('h');
+//		 hh0 = Number(hh.innerHTML);
+//		
+		var apm = document.getElementById('am');
+		var apm1 = apm.innerHTML;
+		var week1 = document.getElementById('week');
+		var week0 = week1.innerHTML;
+		var week2 = ['星期一','星期二','星期三','星期四','星期五','星期六','星期七'];
+		var i=j=0;
+		
+	function t(){
+		var now = new Date;
+		 hh0 = now.getHours();
+		 hh0 = Number(hh0);
+		 if(hh0>12){
+		 	hh0=hh0-12;
+		 	apm1 = "PM"
+		 	i++;		 	
+		 }
+		 mm0 = now.getMinutes();
+		 ss0 = now.getSeconds();
+		s.innerHTML =ss0;
+		m.innerHTML =mm0;
+		h.innerHTML =hh0;
+	}
+	
+	function time(){
+		if(ss0>=60){
+			ss0=0;
+			mm0++;
+		
+		if(mm0>=60){
+			mm0=0;
+			hh0++;
+		
+		if(hh0>=12){
+			hh0=0;
+			if(apm1==="AM"){
+				apm1="PM";
+				i++;
+				if(i % 2 ==0){
+					j++;
+					j = j%7;
+					week0 = week2[j]
+				}
+			}else{
+				apm1="AM";
+				i++;
+				if(i % 2 ==0){
+					j++;
+					j = j%7;
+					week0 = week2[j]
+				}
+			}
+		}
+		}
+		}
+				
+		if(ss0<10){
+			s.innerHTML = '0'+ss0;
+		}else{
+			s.innerHTML = ss0;}
+		if(mm0<10){
+			m.innerHTML = '0'+mm0;
+		}else{
+			m.innerHTML = mm0;
+		}
+		if(hh0<10){
+			h.innerHTML = '0'+hh0;
+		}else{
+			h.innerHTML = hh0;
+		}
+		am.innerHTML = apm1;
+		week.innerHTML = week0;
+		ss0 = ss0 + 1; 
+	}
+	function start(){
+		t();
+		timout = setInterval(time,1);
+	}
+	function end(){
+		clearInterval(timout);
+	}
+	
+</script>

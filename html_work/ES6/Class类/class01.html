@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			
+			class dog{
+				name = '';
+				color = '';				
+				constructor(name,color){
+					this.name= name;
+					this.color = color;
+				}				
+				print1(){
+					console.log(`dog  name:${this.name},color:${this.color}`);
+				}
+			}
+			let dog1 = new dog('哈士奇','黑白相间');
+			dog1.print1();
+			
+			
+			class DogAge extends dog{
+				age = 0;
+				
+				constructor(a,b,age){
+					super(a,b);
+					this.age = age;
+				}
+				
+				show(){
+					console.log(`dog  name:${this.name},color:${this.color},age:${this.age}岁`);
+				}
+			}
+			
+			let dog2 = new DogAge('萨摩耶','雪白',8);
+			dog2.show();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

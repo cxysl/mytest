@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a{
+				color: red;
+			}
+			.b{
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" language="JavaScript">
+		function a(){
+			while(true){
+				var str = prompt("请输入一串字符串，当输入'STOP'停止。","");
+				if(str=='STOP'){
+					document.write('<p class=a>'+str+'</p>');
+					break;
+				}else{
+					document.write('<p class=b>'+str+'</p>');
+				}				
+			}
+			}
+			a();
+//			document.write('ggg');
+		</script>
+	</body>
+</html>

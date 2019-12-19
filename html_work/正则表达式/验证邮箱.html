@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font: normal bolder 14px  "微软雅黑";
+			}
+			div{
+				width: 300px;
+			}
+			#text{
+				width: 300px;
+				background-color: #0AF0E3;
+				font: normal bolder 14px  "微软雅黑";
+				height: 30px;
+			}
+			#submit,#reset{
+				font: normal bolder 14px  "微软雅黑";
+				float: right;
+				color:white;
+				background-color: #0079D7;
+				border: none;
+				width: 60px;
+				height: 30px;
+				margin: 0 10px;
+			}
+		</style>
+			<script type="text/javascript" language="JavaScript">
+			function ck(){
+				var txt = document.getElementById("text");
+				var txt1 = txt.value;
+				var x = RegExp(/@|。/);				
+				var true1 = /^([a-zA-A]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([A-Za-z]{2,4})$/;
+				if(true1.test(txt1)){
+					alert("邮箱名称正确，邮箱名为："+txt1);
+				}else if(txt1==0){
+					alert("邮箱名称不能为空");
+				}else if (!txt1.match(x)){
+					alert("邮箱名称必须包含@和.");
+				}else{
+					alert("邮箱名称错误！");
+				}
+				
+			}
+		</script>
+	</head>
+	<body>		
+			<div>请输入正确的邮箱地址：</div>
+			<div>
+				<input type="text" id="text"  />
+			</div>
+			<div>				
+				<button id="reset" type="reset">取消</button>
+				<button type="button" id="submit" onclick="ck()">确定</button>
+			</div>
+	</body>
+</html>

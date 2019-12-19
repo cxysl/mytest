@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			 //字符串解构赋值
+			let [a,b,c,d,e,f,g,h] = "小红，小黑，小白"; 
+			console.log(`${a}${b}‐${c}‐${d}${e}‐${f}‐${g}${h}`);
+						// 小       红  -  ，-  小      黑   - ， -  小       白
+			//数组解构赋值 
+			let [z,x,y] = ['小红','小黑','小白']; 
+			console.log(`${x}‐‐${y}‐‐${z}`);
+						//小黑-- 小白--小红
+			//对象模型的解构赋值 
+			//键名一定要对应 
+			//基本 
+			let {username,userpassword} = {username:"abc",userpassword:"123"}; 
+			console.log(`${username}‐‐‐${userpassword}`); 
+			//可嵌套赋值 
+			let obj = {p:['hello',{n:'world'}]}; 
+			let {p:[m,{n}]} = obj; 
+			console.log(`${m},${n}`); 
+			//可忽略赋值 
+			let o = {p:['hello',{n:'world'}]}; 
+			let {p:[q,{ }]} = o; 
+			console.log(`${q}`);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

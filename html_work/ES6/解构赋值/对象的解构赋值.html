@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*//对象的解构赋值 
+			let {foo,bar} = {foo:"aaa",bar:"123"}; 
+			console.log(foo); 		//aaa
+			console.log(bar); 		//123
+			
+			//嵌套结构对象 
+			let obj2 = { first: 'hello', last: 'world' }; 
+			let { first, last } = obj2; 
+			console.log(`${first}‐‐${last}`);	//hello--world
+			
+			//p是一个对象，对象内容是长度为二的数组，数组中元素一是字符串'hello'，元素二是对象y:"world"
+			let obj = {p:['hello',{y:'world'}]}; 
+			let {p:[x,{y}]} = obj; 
+			//p作为赋值变量 
+			let {p} = obj; 
+			console.log(x+","+y); //hello,world
+			console.log(p);		//0: "hello"	1: {y: "world"}	length: 2
+			
+			const node = {loc:{start:{line:1,column:5}}}; 
+			let {loc,loc:{start},loc:{start:{line,column}}} = node; 
+			//分别是对loc,start,line三个属性的解构赋值。 
+			//最后一次对line,column属性的解构赋值之中,只有line和column是变量，loc和start 都是模式，不是变量 
+			console.log(`${loc}‐‐${start}‐‐${line}‐‐${column}`);
+			
+			//嵌套赋值 
+			let obj = {}; 
+			let arr = []; 
+			({foo:obj.prop,bar:arr[0]} = {foo:123,bar:true}); 
+			console.log(`${obj.prop}‐‐‐${arr}`);*/
+			
+			
+            //变量解构赋值 
+            let x; 
+            //错误写法 JavaScript会将{x}理解成一个代码块，从而发生语法错误 
+            //{x} = {x:1}; 
+            //正确写法 只有不将大括号写在行首，放在一个圆括号内，就可以正确执行 
+            ({x} = {x:1}); 
+            console.log(`${x}`);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

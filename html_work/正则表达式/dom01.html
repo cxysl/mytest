@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul li{
+				/*float: left;*/
+				list-style: none;
+				/*color: red;*/
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>段落文本1</li>
+			<li>段落文本2</li>
+			<li>段落文本3</li>
+			<li>段落文本4</li>
+			<li>段落文本5</li>
+		</ul>
+		<button type="button" onclick="ck()">变化</button>
+		<button type="button" onclick="get_color()">获得颜色</button>
+	</body>
+</html>
+<script type="text/javascript">
+	var a = document.getElementsByTagName('li');
+	var i = document.getElementsByTagName('li').length;
+	function ck(){
+		var j = 0;
+		for(j=0;j<i;j++){
+			a[j].style.color = "red";
+		}
+	}	
+	function get_color(){
+		var a2 = document.getElementsByTagName('li')[0];
+		var mycolor = a2.style.color;
+		alert(mycolor);
+	}
+</script>

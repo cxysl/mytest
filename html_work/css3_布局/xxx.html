@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 750px;
+				height: 340px;
+				border: 1px dashed deepskyblue;
+				overflow: hidden;
+				position: relative;
+			}
+			.list1,.list2,.list3{
+				position: absolute;
+			}
+			span{
+				background-color: darkgray;
+				width: 20px;
+				height: 20px;
+				margin: 0px 10px;
+				border-radius: 50%;
+				line-height: 20px;
+				text-align:center;
+				color: #FFFFFF;
+				opacity: 0.9;
+			}
+			#a{
+				bottom: 30px;
+				right: 80px;
+				position: absolute;
+			}
+			#b{
+				bottom: 30px;
+				right: 50px;
+				position: absolute;
+			}
+			#c{
+				bottom: 30px;
+				right: 20px;
+				position: absolute;
+			}  
+			#a:hover .list3{
+				display: none;
+			}
+			#a:hover .list2{
+				display: none;
+			}
+			#b:hover .list1{
+				display: none;
+			}
+			#b:hover .list3{
+				display: none;
+			}
+			#c:hover .list1{
+				/*display: none;*/
+				z-index: 99;
+			}
+			#c:hover .list2{
+				display: none;
+			}
+		    span:hover{
+				background-color: red;
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="list1">
+				<img src="img/70国庆10.01.jpg" width="750px" height="340px" />
+			</div>
+			<div class="list2">
+				<img src="img/center.jpg" width="750px" height="340px" />
+			</div>	
+			<div class="list3">
+				<img src="img/timg.jpg" width="750px" height="340px" />
+			</div>
+			<!--<div id="bg">-->
+				<span id="a">1</span>
+				<span id="b">2</span>
+				<span id="c">3</span>
+			<!--</div>-->
+		</div>
+	</body>
+</html>

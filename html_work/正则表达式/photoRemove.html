@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.main{
+				width: 35px;
+				height: 150px;
+				float: right;
+			}
+			#timeShow{
+				width: 200px;
+				height: 30px;
+				border:1px solid red;
+				float: right;
+				margin-top: 100px;
+				background-color: red;
+				color: white;
+				line-height: 30px;
+				
+				display: none;
+			}
+		</style>
+		
+		
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#time").mouseover(function(){
+					$("#timeShow").fadeIn();
+				});
+				$("#time").mouseout(function(){
+					$("#timeShow").fadeOut();
+				});
+				$("#time").mouseover(function(){
+				  
+				});
+			});
+		</script>
+		
+		
+		
+	</head>
+	<body>
+		<div class="main">
+		  <div id="photoRemove">
+			<img id="money" src="img/e5e72b8124d967ab5e20a47501f22ac.png" width="30" height="30"/>
+			<img id="chat" src="img/13a7300eeb5c79865e94afc09595f60.png" width="30" height="30"/>
+			<img id="shoppingCar" src="img/a7448efed28d882ee43ffb362ae5cf3.png" width="30" height="30"/>
+			<img id="time" src="img/15cc347a577f3a2b25a00b954d6a8d9.png" width="30" height="30"/>
+		  </div>
+		</div>
+		
+		<div id="timeShow">
+		  	您所剩下的时间
+		</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1{
+				font:normal bolder 25px  "微软雅黑";
+				border: 1px solid red;
+				width: 300px;
+				line-height: 50px;
+				height: 50px;
+				margin: 15px 0;
+				margin-left: 15px;
+			}
+			.div2{
+				font:normal normal 14px  "微软雅黑";
+				border: 1px solid blue;
+				width: 350px;
+				margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='div1'> 红盒子装大胖</div>
+		<div class='div2'> 
+		<div class="div22">蓝盒子装小胖</div>
+		</div>
+		<button onclick="ck2()">移动</button>
+	</body>
+</html>
+<script>
+	function ck2(){		
+		var div1 = document.getElementsByClassName('div1')[0];
+		var div2 = document.getElementsByClassName('div2')[0];
+		var div22 = document.getElementsByClassName('div2')[0];
+		div2.appendChild(div1);
+	}
+</script>

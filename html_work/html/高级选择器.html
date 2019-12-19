@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高级选择器</title>
+		<style type="text/css">
+			ul li ul li ul li{
+				color: red;
+			}
+			#001,ul li ul>li{
+				color:blue
+			}
+			ul>li{
+				color:blue
+			}
+			
+			ul li ol>li{
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>一层 1
+				<ul id="001">
+					<li>2层1</li>
+					<li>2层2
+						<ul>
+							<li>③层1</li>
+							<li>③层2</li>
+							<li>③层3</li>
+						</ul>
+					</li>
+					<li>2层3</li>
+				</ul>
+			</li>
+			<li> 一层2
+				
+				<ol>
+					<li>2层1、</li>
+					<li>2层2、</li>
+					<li>2层3、</li>
+					<li>2层4、</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
+</html>

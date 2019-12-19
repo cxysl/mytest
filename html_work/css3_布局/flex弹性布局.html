@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>container</title>
+		<style type="text/css">
+			#container{
+				width: 80%;
+				/*height: 500px;*/
+				margin: 0 auto;
+				border: dashed 1px deepskyblue;
+				display: flex;
+				/*row起点在左端 column上端 row-reverse右端 column-reverse下端*/
+				flex-direction: row;
+				/*nowrap不换行  wrap换行 wrap-reverse*/
+				flex-wrap: wrap;
+				flex-flow: row wrap; 
+				/*水平方向flex-start左对齐   flex-end右对齐  center 居中  space-around  space-between*/
+				justify-content: flex-start;
+				/*垂直方向center  stretch  flex-start  baseline*/
+				align-items:center;
+				align-content: center;
+			}
+			#container div{
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+				border-radius: 50%;
+				background-color: aqua;
+				line-height: 100px;
+				text-align: center;
+				font-size:25px ;
+				font-weight: bolder;
+				font-family: "微软雅黑";
+				color: white;
+				/*flex-grow: 1;*/
+			}
+			#div01{
+				order: 1;
+				/*flex-grow: 2;*/
+			}
+			#div02{
+				flex-shrink: 0; /*0不缩小  1等比例缩小*/
+				flex-basis: initial;
+			}
+			#div03{
+				/*flex:1 1 auto;*/
+			}
+			#div07{
+				align-self: ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="div01">1</div>
+			<div id="div02">2</div>
+			<div id="div03">3</div>
+			<div id="div04">4</div>
+			<div id="div05">5</div>
+			<div id="div06">6</div>
+			<div id="div07">7</div>
+			<div id="div08">8</div>
+			<div id="div09">9</div>
+		</div>
+	</body>
+</html>

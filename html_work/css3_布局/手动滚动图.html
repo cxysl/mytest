@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 750px;
+				height: 340px;
+				border: 1px dashed deepskyblue;
+				overflow: hidden;
+				position: relative;
+			}
+			.list{
+				width: 2200px;
+				position: relative;
+				          /*动画名  动画时长  线性  延时  循环  反向*/
+			}
+			.list img{
+				float: left;
+				margin-left: 5px;
+			}
+			span{
+				background-color: darkgray;
+				width: 20px;
+				height: 20px;
+				margin: 0px 10px;
+				border-radius: 50%;
+				line-height: 20px;
+				text-align:center;
+				color: #FFFFFF;
+				opacity: 0.9;
+			}
+			#a{
+				bottom: 30px;
+				right: 80px;
+				position: absolute;
+			}
+			#b{
+				bottom: 30px;
+				right: 50px;
+				position: absolute;
+			}
+			#c{
+				bottom: 30px;
+				right: 20px;
+				position: absolute;
+			}
+			#bg span:hover{
+				background-color: red;
+				font-weight: bolder;
+			}
+			#a:hover .list img:first-child{
+				/*left: -0px;*/
+				margin-left: 310px;
+				background-color: red;
+			}
+			#b:hover .list{
+				/*left: -310px;*/
+				margin-left: 310px;
+			}
+			#c:hover .list{
+				/*left: -615px;*/
+				margin-left: 615px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="list">	
+				<img src="img/center.jpg" width="750px" height="340px" />
+				<img src="img/70国庆10.01.jpg" width="750px" height="340px" />
+				
+				<img src="img/timg.jpg" width="750px" height="340px" />
+			</div>
+			<div id="bg">
+				<span id="a">1</span>
+				<span id="b">2</span>
+				<span id="c">3</span>
+			</div>	
+		</div>
+	</body>
+</html>

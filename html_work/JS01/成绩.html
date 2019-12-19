@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" language="JavaScript">
+			var sum = 0;
+			var j = prompt("请输入有几门课","");
+			var i=1;
+			while(i<=j){
+				var a = prompt("请输入第"+i+"门的成绩","");
+				a = Number(a);
+				document.write(a+"&nbsp;&nbsp;&nbsp;&nbsp;")
+				if(a>=0){
+					sum+=a;
+				}
+				else{
+					document.write('输入成绩有误！');
+					i--;
+				}
+				i++;
+			}
+			document.write('<br/>')
+			alert('总成绩为：'+sum);
+//			document.write('总成绩为：'+sum);
+		</script>
+	</body>
+</html>

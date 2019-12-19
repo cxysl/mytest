@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#main{
+				width: 300px;
+				height: 150px;
+				border: 1px dashed deepskyblue;
+				overflow: hidden;
+			}
+			.list{
+				width: 920px;
+				position: relative;
+				          /*动画名  动画时长  线性  延时  循环  反向*/
+				animation: go 6s linear 0s infinite alternate;
+			}
+			.list img{
+				float: left;
+				margin-left: 5px;
+			}
+			@keyframes go{
+				0%,10%{left: 0px;}
+				10%,40%{left: -310px;}
+				40%,50%{left: -310px;}
+				50%,80%{left: -615px;}
+				100%{left: -615px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="list">
+				<img src="img/center.jpg" width="300px" height="150px" />
+				<img src="img/70国庆10.01.jpg" width="300px" height="150px" />
+				<img src="img/timg.jpg" width="300px" height="150px" />
+			</div>
+		</div>
+	</body>
+</html>
